@@ -1,6 +1,6 @@
-from pydantic_settings import BaseSettings
+from pydantic import BaseModel
 
-class PxSettings(BaseSettings):
+class PxSettings(BaseModel):
     base_url: str
     username: str
     password: str
